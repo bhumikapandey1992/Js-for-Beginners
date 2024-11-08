@@ -1,0 +1,142 @@
+body {
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffcc00;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #1b1b1b;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+    color: #ffcc00;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #ffcc00;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #ffcc00;
+  }
+  
+  button {
+    padding: 15px;
+    background-color: #ff9800;
+    color: #1b1b1b;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background-color: #ffb74d;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background-color: #2a2a2a;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #ffcc00;
+  }
+  
+  li.completed .task-text {
+    text-decoration: line-through;
+    color: #9e9e9e;
+  }
+  
+  .task-text {
+    flex: 1;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .complete-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #ff9800;
+  }
+  
+  .delete-btn {
+    background-color: #d84315;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: #bf360c;
+  }
+  
+  .clear-btn {
+    margin-top: 20px;
+    background-color: #d84315;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .clear-btn:hover {
+    background-color: #bf360c;
+  }
+  
